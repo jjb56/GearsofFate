@@ -1,0 +1,2340 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WorldofKoltorran",
+				"abbreviation": "WoT",
+				"full": "World Of Koltorran",
+				"authors": [
+					"Debreut"
+				],
+				"version": "1.0.0",
+				"url": "",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0,
+		"_dateLastModifiedHash": "0803d8fd66"
+	},
+	"race": [
+		{
+			"name": "Dhampir",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"cha": 2,
+					"int": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 120,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Dhampirs mature at roughly the same rate as humans but do not age further after reaching maturity, and they do not die of old age."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Dhampirs are of similar height and build to humans. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superior Darkvision",
+					"entries": [
+						"You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"You have disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dhampir Resistance",
+					"entries": ["You are resistant to poison damage, and have advantage on saving throws against poison."]
+				},
+				{
+					"type": "entries",
+					"name": "Undead Legacy",
+					"entries": ["You know the {@spell friends} cantrip. Once you reach 3rd level, you can cast the {@spell suggestion} spell once with this trait, and you regain the ability to do so when you finish a long rest. Once you reach 5th level, you can cast the {@spell vampric} touch spell once with this trait as a 3rd-level spell, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."]
+				},
+				{
+					"type": "entries",
+					"name": "Undead Aura",
+					"entries": ["You are considered humanoid, but divination spells and similar effects reveal you as undead."]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"other": true
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 56,
+				"heightMod": "2d10",
+				"baseWeight": 110,
+				"weightMod": "2d4"
+			},
+			"resist": [
+				"poison"
+			],
+			"traitTags": [
+				"Damage Resistance",
+				"Spellcasting",
+				"Sunlight Sensitivity"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"suggestion"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"vampiric touch"
+								]
+							}
+						}
+					},
+					"ability": "cha",
+					"known": {
+						"1": [
+							"friends#c"
+						]
+					}
+				}
+			],
+			"subraces": [
+				{
+					"name": "Shade",
+					"source": "WorldofKoltorran",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Shadow-Blooded",
+							"entries": [
+								"You are resistant to necrotic damage."
+							]
+						}
+					],
+					"resist": [
+						"necrotic"
+					]
+				},
+				{
+					"name": "Vampiric",
+					"source": "WorldofKoltorran",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Vampiric Fangs",
+							"entries": [
+								"Your fangs are long enough to be a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@damage 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike, and regain hit points equal to half the damage dealt. You can use this attack only once per short or long rest."
+							]
+						}
+					],
+					"traitTags": [
+						"Unarmed Strike"
+					]
+				},
+				{
+					"name": "Undying",
+					"source": "WorldofKoltorran",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Undead Endurance",
+							"entries": [
+								"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Feyborn",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"dex": 2
+				}
+			],
+			"size": [
+				"S"
+			],
+			"speed": 30,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Feyborn are normally between 3 to 5 feet tall, and about 100 pounds. Your size is small."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Feyborn mature at the same rate as humans, but do not mature past the age of 13. They can live up to 500 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Power",
+					"entries": [
+						"Your fae ancestry makes it hard for others to resist your spells. Opponents don't gain the benefit of magic resistance against spells you cast."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Sylvan."
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"sylvan": true
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 36,
+				"heightMod": "2d12",
+				"baseWeight": 80,
+				"weightMod": "2d10"
+			},
+			"subraces": [
+				{
+					"name": "Wild",
+					"source": "WorldofKoltorran",
+					"ability": [
+						{
+							"wis": 1
+						}
+					],
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Unhindered",
+							"entries": [
+								"You have a climb speed and swim speed of 15 feet."
+							]
+						}
+					],
+					"speed": {
+						"walk": 30,
+						"climb": 15,
+						"swim": 15
+					}
+				},
+				{
+					"name": "Settled",
+					"ability": [
+						{
+							"cha": 1
+						}
+					],
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Nature's Bond",
+							"entries": [
+								"You gain proficiency in the nature and survival skills."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Foxfolk",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"dex": 2,
+					"cha": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"skillProficiencies": {
+				"deception": true
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"sylvan": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Foxfolk reach adulthood at age 15 and live up to 80 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Kitsune are around the same height as humans, though slightly less heavy. Your size is medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Sylvan"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Quick-Limbed",
+					"entries": [
+						"You are proficient in the {@skill acrobatics} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bite",
+					"entries": [
+						"Your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal slashing damage equal to {@damage 1d4} + your Strength modifier, instead of bludgeoning damage normal for an unarmed strike."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Innate Spellcasting",
+					"entries": [
+						"You know the {@spell dancing lights} cantrip. Starting at 3rd level, you can also cast {@spell disguise self} with this trait any amount of times per day. Charisma is your spellcasting ability for these spells."
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Forest",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Cunning",
+							"entries": [
+								"You are proficient in the {@skill deception} skill."
+							]
+						}
+					]
+				},
+				{
+					"name": "Field",
+					"speed": 35,
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Fleet",
+							"entries": [
+								"Your base walking speed increases to 35 feet."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Grippli",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"dex": 2,
+					"wis": 1
+				}
+			],
+			"size": [
+				"S"
+			],
+			"speed": 20,
+			"darkvision": 60,
+			"weaponProficiencies": [
+				{
+					"net|phb": true,
+					"blowgun|phb": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"A grippli reaches adulthood at 12 years old and lives to reach up to 70 years of age."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Grippli are slender and range from 2-3 feet high on average. Your size is small."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Terran"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Jump",
+					"entries": [
+						"So long as you are not wearing heavy armor or overencumbered, your jump distance is based off of dexterity instead of strength. You can always make a running long jump or a running high jump, regardless of whether or not you moved on your turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Instant Leap",
+					"entries": [
+						"Leaping through a space does not provoke attacks of opportunity."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Grippli Weaponry",
+					"entries": [
+						"You gain proficiency with the {@item net|phb} and {@item blowgun|phb}."
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Tree",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Camouflage",
+							"entries": [
+								"You gain advantage on {@skill stealth} checks while in forested or marshy areas, and can hide in plain sight in those areas if you don't move."
+							]
+						}
+					]
+				},
+				{
+					"name": "Pond",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Tongue Grab",
+							"entries": [
+								"You can grab any unattended object that you can carry within 10 feet of you and pull it to yourself as a bonus action. This action does not reveal your position if you are stealthed."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Human",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 2
+					}
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Humans reach adulthood in their late teens and live less than a century."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skills",
+					"entries": [
+						"You gain proficiency in one skill of your choice."
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Warrior Soul",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Moment of Focus",
+							"entries": [
+								"Once per long rest, you can reroll an attack roll, saving throw, or skill check after the result is determined, but you must use the new result."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Enduring",
+							"entries": [
+								"You can stay awake for two days before you begin to gain exhaustion due to lack of sleep instead of one."
+							]
+						}
+					]
+				},
+				{
+					"name": "Adept",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex",
+									"con",
+									"int",
+									"wis",
+									"cha"
+								],
+								"count": 4
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Expertise",
+							"entries": [
+								"Choose one skill in which you have proficiency. Your proficiency bonus is doubled for any ability check you make with it."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ifrit",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"con": 2,
+					"int": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"ignan": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Ifrit reach adulthood in their late teens and live up to 120 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Ifrit vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Ignan."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fire Resistance",
+					"entries": [
+						"You have resistance to fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. Your ties to the Elemental Plane of Fire make your darkvision unusual: everything you see in darkness is in a shade of red."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Reach to the Blaze",
+					"entries": [
+						"You know the {@spell produce flame} cantrip. Once you reach 3rd level, you can cast the {@spell burning hands} spell once with this trait as a 2nd-level spell, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells."
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"2": {
+							"daily": {
+								"1": [
+									"burning hands"
+								]
+							}
+						}
+					},
+					"ability": "con",
+					"known": {
+						"1": [
+							"produce flame#c"
+						]
+					}
+				}
+			],
+			"resist": [
+				"fire"
+			],
+			"subraces": [
+				{
+					"name": "Lightborn",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Emissive Hair",
+							"entries": [
+								"While your hair is visible, you provide bright light in a 10-foot radius and dim light for an additional 10 feet."
+							]
+						}
+					]
+				},
+				{
+					"name": "Fireborn",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Burning Blood",
+							"entries": [
+								"Any creature that hits you with a melee attack while within 5 feet of you takes {@damage 1d4} fire damage."
+							]
+						}
+					]
+				},
+				{
+					"name": "Planar",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Burning Essence",
+							"entries": [
+								"As a bonus action, you can ignite any amount of unattended objects within 10 feet of you."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Kobold",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"dex": 2
+				}
+			],
+			"size": [
+				"S"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Kobolds reach adulthood at age 6 and can live up to 120 years but rarely do so."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Kobolds are between 2 and 3 feet tall and weigh between 25 and 35 pounds. Your size is Small."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pack Tactics",
+					"entries": [
+						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated."
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Scaled",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Scaled Hide",
+							"entries": [
+								"You gain a +1 bonus to your armor class due to your natural armor."
+							]
+						}
+					]
+				},
+				{
+					"name": "Simple",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Grovel, Cower, and Beg",
+							"entries": [
+								"As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that you can see. Once you use this trait, you can't use it again until you finish a short or long rest."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Merfolk",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"dex": 2,
+					"con": 2,
+					"cha": 2
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 5,
+				"swim": 50
+			},
+			"darkvision": 120,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"aquan": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Merfolk reach adulthood in their late teens and live up to 120 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Merfolk's tails make them slightly taller then humans, but of similar builds. Your size is medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Aquan"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superior Darkvision",
+					"entries": [
+						"Due to your affinity for the depths of the sea, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Swimming Speed",
+					"entries": [
+						"You have a swimming speed of 50 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Legless",
+					"entries": [
+						"You have no legs, and so cannot be tripped."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Amphibious",
+					"entries": [
+						"Merfolk can breathe both air and water, but prefer not to spend long periods out of the water."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cantrip",
+					"entries": [
+						"You know the {@spell shape water} cantrip. Charisma is your spellcasting ability for it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Land Adaptation",
+					"entries": [
+						"As a bonus action, you can you can summon and move water around you to carry you, giving you a walk speed of 30 feet. You must maintain concentration to use this effect (as if concentrating on a spell). This effect is considered magical."
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"1": [
+							"shape water#c"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Nagaji",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"cha": 2,
+					"str": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"resist": [
+				"poison"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Nagaji mature at the same rate as humans and have lifespans similar in length to theirs."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Nagaji match humans in average size and weight. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Poison resistance",
+					"entries": [
+						"You have advantage on saving throws against poison, and are resistant to poison damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fangs",
+					"entries": [
+						"You can make unarmed strikes with your fanged maw. When you do so, your unarmed strikes deal an extra {@damage 1d4} poison damage."
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Ancient",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Magic Resistance",
+							"entries": [
+								"You have advantage on saving throws against spells and other magical effects."
+							]
+						}
+					]
+				},
+				{
+					"name": "Primal",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Serpentile Influence",
+							"entries": [
+								"You know the poison spray cantrip. You can cast {@spell animal friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. Charisma is your spellcasting ability for these spells."
+							]
+						}
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": [
+									"animal friendship"
+								],
+								"3": {
+									"daily": {
+										"1": [
+											"suggestion"
+										]
+									}
+								}
+							},
+							"ability": "cha",
+							"known": {
+								"1": [
+									"poison spray#c"
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Orc",
+			"source": "WorldofKoltorran",
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"ability": [
+				{
+					"str": 2,
+					"con": 1
+				}
+			],
+			"heightAndWeight": {
+				"baseHeight": 64,
+				"heightMod": "2d8",
+				"baseWeight": 175,
+				"weightMod": "2d6"
+			},
+			"age": {
+				"mature": 12,
+				"max": 50
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Monstrous Race",
+				"Powerful Build"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"orc": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Orcs reach adulthood at age 12 and live up to 50 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Orcs are usually over 6 feet tall and weigh between 230 and 280 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, you can move up to your movement speed toward a hostile creature you can see or hear. You must end this move closer to the enemy than you started."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Orc."
+					],
+					"type": "entries"
+				}
+			],
+			"subraces": [
+				{
+					"name": "Wilderness",
+					"skillProficiencies": [
+						{
+							"choose": {
+								"from": [
+									"animal handling",
+									"insight",
+									"intimidation",
+									"medicine",
+									"nature",
+									"perception",
+									"survival"
+								],
+								"count": 2
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Primal Intuition",
+							"entries": [
+								"You have proficiency in two of the following skills of your choice: Animal Handling, Insight, Intimidation, Medicine, Perception, and Survival."
+							]
+						}
+					]
+				},
+				{
+					"name": "Badlands",
+					"ability": [
+						{
+							"str": 2,
+							"con": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Oread",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"con": 2,
+					"str": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"terran": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Oreads mature at about the same rate as humans and reach adulthood in their late teens. They live somewhat longer than humans do, up to 120 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Oreads are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall, and weighing almost double a human's weight of the same size. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Terran."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Stone Immunity",
+					"entries": [
+						"You are immune to the petrified condition."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Earth Walk",
+					"entries": [
+						"You can move across {@quickref difficult terrain|phb} made of earth or stone without expending extra movement."
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Deep",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Merge with Stone",
+							"entries": [
+								"You can cast the {@spell pass without trace} spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell."
+							]
+						}
+					],
+					"additionalSpells": [
+						{
+							"ability": "con",
+							"known": {
+								"1": [
+									"pass without trace"
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Mountain",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Heavy Fists",
+							"entries": [
+								"Your unarmed strikes deal an additional {@damage 1d4} damage."
+							]
+						}
+					]
+				},
+				{
+					"name": "River",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Stalwart",
+							"entries": [
+								"If you are exposed to an effect that would move you to a different position, you can choose not to be moved. You can use this feature once per long rest."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ratfolk",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"dex": 2,
+					"int": 1
+				}
+			],
+			"size": [
+				"S"
+			],
+			"speed": 35,
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"undercommon": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Ratfolk reach adulthood at around age 12, and usually live to be around 150."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Ratfolk look thin and frail, standing at about 3 to 4 feet high, and weighing around 50 to 75 lbs. Your size is small."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Undercommon."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Deft Reaction",
+					"entries": [
+						"You have advantage on initiative rolls as long as you're not surprised."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Meager Build",
+					"entries": [
+						"You count as one size smaller when squeezing through spaces and determining cover."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Duplicity",
+					"entries": [
+						"You have proficiency in the deception skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rat's Constitution",
+					"entries": [
+						"You have resistance to poison damage, and have advantage on saves against poison."
+					]
+				}
+			],
+			"resist": [
+				"poison"
+			],
+			"skillProficiencies": [
+				{
+					"deception": true
+				}
+			]
+		},
+		{
+			"name": "Samsaran",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"int": 2,
+					"wis": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"celestial": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Samsarans reach adulthood at age 60 and can live to be 600 years old."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Samsarans are around the same height and weight as humans. Your size is medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Celestial."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Samsaran Resistance",
+					"entries": [
+						"You have resistance to necrotic damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lifebound",
+					"entries": [
+						"Whenever you would regain hit points, roll the effect's dice twice and take the higher result for yourself."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shards of the Past",
+					"entries": [
+						"You gain proficiency in one of the following skills: Arcana, History, Religion, or Nature."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Samsaran Magic",
+					"entries": [
+						"You know the {@spell spare the dying} cantrip."
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "int",
+					"known": {
+						"1": [
+							"spare  the dying#c"
+						]
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"arcana",
+							"history",
+							"religion",
+							"nature"
+						],
+						"count": 1
+					}
+				}
+			],
+			"resist": [
+				"necrotic"
+			]
+		},
+		{
+			"name": "Strix",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"dex": 2,
+					"con": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk":30,
+				"fly": 30
+			},
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"infernal": true,
+					"auran": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Strix reach adulthood in their late teens and live less than a century."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Strix vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Infernal, and Auran."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Flight",
+					"entries": [
+						"You have a flying speed of 30 feet. To use this speed, you can't be wearing medium or heavy armor."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Slip Into Shadow",
+					"entries": [
+						"You can use the Hide action as a bonus action, even if you have no cover or if you're under observation. Regardless of whether you succeed or fail, once you use this ability, you can't use it again until you finish a short or long rest."
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Moon",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Superior Darkvision",
+							"entries": [
+								"You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray"
+							]
+						}
+					],
+					"darkvision": 120
+				},
+				{
+					"name": "Sun",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Disbelieving",
+							"entries": [
+								"You have advantage on saving throws against illusion spells."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Suspicious",
+							"entries": [
+								"You have proficiency in {@skill insight}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Darkvision",
+							"entries": [
+								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+							]
+						}
+					],
+					"skillProficiencies": [
+						{
+							"insight": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sylph",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"con": 2,
+					"dex": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"auran": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Sylph reach adulthood in their late teens and live up to 120 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Sylph vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Auran."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unending Breath",
+					"entries": [
+						"You can hold your breath indefinitely while you're not incapacitated."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mingle with the Wind",
+					"entries": [
+						"You know the {@spell gust} cantrip. You can cast the {@spell levitate} spell ,and regain the ability to cast it when you finish a long rest. Once you reach 3rd level, you can also cast the {@spell gust of wind} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Constitution is your spellcasting ability for these spells."
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": {
+							"daily": {
+								"1": [
+									"levitate"
+								]
+							}
+						},
+						"3": {
+							"daily": {
+								"1": [
+									"gust of wind"
+								]
+							}
+						}
+					},
+					"ability": "con",
+					"known": {
+						"1": [
+							"gust#c"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Undine",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"wis": 2,
+					"dex": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"swim": 20
+			},
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"aquan": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Undine reach adulthood around the age of 60 and live nearly 800 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Undines vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Aquan."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Adept Swimmers",
+					"entries": [
+						"You have a swim speed of 20 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Undine Resistance",
+					"entries": [
+						"You have resistance to cold damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Waterborn",
+					"entries": [
+						"You know the {@spell shape water} cantrip. Once you reach 3rd level, you can cast the {@spell create or destroy water} spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you finish a long rest. Once you reach 5th level, you can also cast the {@spell wall of water} spell; you must finish a long rest in order to cast the spell again using this trait. Wisdom is your spellcasting ability for these spells."
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"create or destroy water"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"wall of water"
+								]
+							}
+						}
+					},
+					"ability": "wis",
+					"known": {
+						"1": [
+							"shape water#c"
+						]
+					}
+				}
+			],
+			"resist": [
+				"cold"
+			]
+		},
+		{
+			"name": "Vanara",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"dex": 2,
+					"wis": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 25,
+				"climb": 20
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"terran": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Vanara mature faster than humans, reaching adulthood by the age of 12, and commonly live to be around 100 years old."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Vanara are taller but weigh about as much as most humans. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Terran."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Adept Climbers",
+					"entries": [
+						"You have a climb speed of 20 feet. You can also climb across ceilings, but must succeed on either a DC 12 {@skill athletics} or {@skill acrobatics} check; failing causes you to lose your grip and fall."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Limit Break",
+					"entries": [
+						"Vanara are always striving to push themselves. As a reaction, when you fail Strength, Dexterity or Constitution ability check or saving throw, you can remake the check and take the new result. Once you use this ability, you can't use it again until you complete a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skills of the Primate",
+					"entries": [
+						"You are proficient in the Acrobatics skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Prehensile Tail",
+					"entries": [
+						"You have a long, flexible tail that acts an as extra hand. You cannot wield weapons or shields with this tail."
+					]
+				}
+			],
+			"skillProficiencies": [
+				"acrobatics"
+			]
+		},
+		{
+			"name": "Vishkanya",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"dex": 2,
+					"cha": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Vishkanya reach adulthood in their late teens and live less than a century."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Vishkanya vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Toxic Blood",
+					"entries": [
+						"As a bonus action, you can take {@damage 1d4} points of damage to apply your blood to a weapon. The next three hits with that weapon deal an extra {@damage 1d4} poison damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Poison Immunity",
+					"entries": [
+						"You are immune to poison damage and the poisoned condition."
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Hellborn",
+			"shortName": "Hellborn",
+			"source": "WorldofKoltorran",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Hellborn|Sorcerer|PHB|Hellborn|WorldofKoltorran|1|WorldofKoltorran",
+				"Hellborn Spells|Sorcerer|PHB|Hellborn|WorldofKoltorran|1|WorldofKoltorran",
+				"Fiendish Blessing|Sorcerer|PHB|Hellborn|WorldofKoltorran|1|WorldofKoltorran",
+				"Hell's Fury|Sorcerer|PHB|Hellborn|WorldofKoltorran|1|WorldofKoltorran",
+				"Hellfire Transmutation|Sorcerer|PHB|Hellborn|WorldofKoltorran|6|WorldofKoltorran",
+				"Curse of the Underworld|Sorcerer|PHB|Hellborn|WorldofKoltorran|10|WorldofKoltorran",
+				"Hellish Wings|Sorcerer|PHB|Hellborn|WorldofKoltorran|14|WorldofKoltorran",
+				"Hellfire Perfection|Sorcerer|PHB|Hellborn|WorldofKoltorran|18|WorldofKoltorran"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Hellborn",
+			"source": "WorldofKoltorran",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WorldofKoltorran",
+			"subclassShortName": "Hellborn",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Some sorcerers are born with a heritage of the underworld."
+			]
+		},
+		{
+			"name": "Hellborn Spells",
+			"source": "WorldofKoltorran",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WorldofKoltorran",
+			"subclassShortName": "Hellborn",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"You learn additional spells when you reach certain levels in this class, as shown on the Hellbourne Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				{
+					"type": "table",
+					"caption": "Hellborn Origin Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell inflict wounds}, {@spell burning hands}"
+						],
+						[
+							"3rd",
+							"{@spell scorching ray}, {@spell ray of enfeeblement}"
+						],
+						[
+							"5th",
+							"{@spell fireball}, {@spell abyssal fissure|WorldofKoltorran}"
+						],
+						[
+							"7th",
+							"{@spell wall of fire}, {@spell dark judgement|WorldofKoltorran}"
+						],
+						[
+							"9th",
+							"{@spell telekinesis}, {@spell warding flame|WorldofKoltorran}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Fiendish Blessing",
+			"source": "WorldofKoltorran",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WorldofKoltorran",
+			"subclassShortName": "Hellborn",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"Your fiendish blood boosts your ability to avoid and negate harm. At 1st level, while you are wearing no armor, your AC equals 13 + your Dexterity modifier.",
+				"Additionally, you gain resistance to fire damage."
+			]
+		},
+		{
+			"name": "Hell's Fury",
+			"source": "WorldofKoltorran",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WorldofKoltorran",
+			"subclassShortName": "Hellborn",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"You are able to infuse hell's might into the spells you cast. At 1st level, you can choose to make any damage dealt by cantrips that you cast deal fire damage instead of their usual type. Its other effects remain the same. At 2nd level, you gain the ability to do this to leveled spells at the cost of 1 Sorcery Point.",
+				"At 2nd level, you can do this to leveled spells at the cost of 1 Sorcery Point."
+			]
+		},
+		{
+			"name": "Hellfire Transmutation",
+			"source": "WorldofKoltorran",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WorldofKoltorran",
+			"subclassShortName": "Hellborn",
+			"level": 6,
+			"header": 2,
+			"consumes": {
+				"name": "Sorcery Point"
+			},
+			"entries": [
+				"You learn to better emulate hellfire. At 6th level, when you cast a spell that deals either fire or necrotic damage, you can add your Charisma modifier to one damage roll of the spell.",
+				"Additionally, You may spend 1 sorcery point to gain the following effect for one minute:",
+				"Whenever you cast a spell that deals fire damage, you may choose to have that spell deal necrotic damage instead. Whenever you cast a spell that deals necrotic damage, you may choose to have that spell deal fire damage instead."
+			]
+		},
+		{
+			"name": "Curse of the Underworld",
+			"source": "WorldofKoltorran",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WorldofKoltorran",
+			"subclassShortName": "Hellborn",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, instead of gaining a new metamagic option, you instead gain the ability to supernaturally debilitate a single target with the dark magic in your blood. As a bonus action, you may curse a target you can see within 60 feet. The next time the target takes damage from you or another creature of your choice, the target gains vulnerability to all damage from that source, then the curse ends. This ability cannot be used again until you take a long rest. You gain additional uses of this ability at levels 14 and 17."
+			]
+		},
+		{
+			"name": "Hellish Wings",
+			"source": "WorldofKoltorran",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WorldofKoltorran",
+			"subclassShortName": "Hellborn",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you gain the ability to sprout a pair of hellish wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.",
+				"You can't manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them."
+			]
+		},
+		{
+			"name": "Hellfire Perfection",
+			"source": "WorldofKoltorran",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WorldofKoltorran",
+			"subclassShortName": "Hellborn",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you perfect the concept of hellfire. Whenever you cast a spell that deals fire damage, you may choose reroll a number of dice equal to your charisma modifier."
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Abyssal Fissure",
+			"source": "WorldofKoltorran",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a metal knife"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a devouring tear in reality on a solid surface within range. You can make the fissure up to 60 feet long and 1 foot wide. The tear lasts for the duration.",
+				"Creatures that start their turn within 15 feet of the fissure are moved 10 feet closer to the fissure and must make a strength saving throw. On a failed save, the creature's speed is reduced to 0. Each creature that starts its turn within 5 feet of the fissure, or comes within 5 feet of the fissure on its turn takes {@damage 3d8} fire damage. This spell deals double damage to creatures that resist its damage type."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@damage 1d8} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"W"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Hellborn Origin",
+							"shortName": "Hellborn",
+							"source": "WorldofKoltorran"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Dark Judgement",
+			"source": "WorldofKoltorran",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a ball made of tightly wrapped cord"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"A sphere of shadowy energy materializes in a 30 foot radius centered on a point within range. Creatures touching an edge of the sphere when the spell starts are unaffected by this spell. Each time damage is dealt by a creature within the sphere, its radius decreases by 5 feet. The first creature that touches the border of the sphere must make a Charisma saving throw. On a failed save, the creature takes {@damage 8d10} necrotic damage, or half that on a successful one. After this damage is dealt, the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@damage 2d10} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Hellborn Origin",
+							"shortName": "Hellborn",
+							"source": "WorldofKoltorran"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Warding Flame",
+			"source": "WorldofKoltorran",
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"A whirlwind of fire blows around you in a 10-foot radius and moves with you, remaining centered on you. The flame lasts for the spell's duration. The flames have the following effects:",
+				"- When a creature other than you enters the area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, the creature takes {@damage 5d8} Fire damage. On a successful save, the creature takes half as much damage.",
+				"- It ignites objects and creatures. Until an ignited creature takes an action to douse the fire, the target takes {@damage 1d10} fire damage at the start of each of its turns.",
+				"- It destroys objects made of wood, including weapons and ammunition, that enter the spell's area.",
+				"- You gain resistance to cold damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@damage 1d8} for each slot level above 5th. If the spell is cast at 8th level or higher, the resistance to cold damage becomes immunity."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"C"
+			],
+			"damageResist": [
+				"cold"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Hellborn Origin",
+							"shortName": "Hellborn",
+							"source": "WorldofKoltorran"
+						}
+					}
+				]
+			}
+		}
+	],
+	"feat": [
+		{
+			"name": "Duel Master",
+			"source": "WorldofKoltorran",
+			"entries": [
+				"You learn to find and exploit enemies' poor movements in battle, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When a creature makes a melee attack against you and your off-hand is empty, you may use a reaction to make a melee weapon attack against your attacker, given they are within range of your weapon.",
+						"If you are wielding a one-handed weapon and you make a weapon attack as a reaction, you may choose to take a -5 penalty to the attack roll. If you do and the attack hits, you add +10 to the attack's damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Powerful Cantrip",
+			"source": "WorldofKoltorran",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You become an expert at the basics of magic, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When a creature succeeds on a saving throw against your cantrip or you miss an attack roll with your cantrip, the target takes half damage but suffers no additional effect from the cantrip."
+					]
+				}
+			]
+		},
+		{
+			"name": "Magus",
+			"source": "WorldofKoltorran",
+			"prerequisite": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"You have learned to use your weapon as a conduit for your magical abilities to gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you wield a weapon you are proficient in, its weapon damage is always treated as magical.",
+						"You may use a melee weapon to deliver any spell attack, using the weapon's attack modifier and range instead of your spell attack modifier and range, and adding your weapon's damage to the first instance of damage the spell deals."
+					]
+				}
+			]
+		}
+	]
+}
