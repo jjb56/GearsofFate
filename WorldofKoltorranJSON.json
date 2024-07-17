@@ -3,7 +3,7 @@
 		"sources": [
 			{
 				"json": "WorldofKoltorran",
-				"abbreviation": "WoT",
+				"abbreviation": "WoK",
 				"full": "World Of Koltorran",
 				"authors": [
 					"Debreut"
@@ -2335,6 +2335,369 @@
 					]
 				}
 			]
+		}
+	],
+	"item": [
+		{
+			"name": "Mage's Companion",
+			"source": "WorldofKoltorran",
+			"page": "",
+			"type": "RG",
+			"rarity": "common",
+			"reqAttune": true,
+			"entries": [
+				"You gain the ability to cast one cantrip, chosen by this item's creator at the time of its creation. Your spellcasting ability for this cantrip is intelligence."
+			]
+		},
+		{
+			"name": "Ahn's Might",
+			"source": "WorldofKoltorran",
+			"type": "M",
+			"rarity": "rare",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				"When you score a critical hit with this weapon, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit. Additionally, it gains a +3 bonus for 1 minute."
+			],
+			"page": 0,
+			"reqAttune": true
+		},
+		{
+			"name": "Dagger of Igniting",
+			"source": "WorldofKoltorran",
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 1,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"dagger": true,
+			"weapon": true,
+			"entries": [
+				"If the dagger deals damage to an object or creature, they catch fire. Until a creature takes an action to douse the fire, the target takes {@dice 1d10} fire damage at the start of each of its turns."
+			]
+		},
+		{
+			"name": "Triglav",
+			"source": "WorldofKoltorran",
+			"type": "M",
+			"rarity": "rare",
+			"weight": 10,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"hammer": true,
+			"weapon": true,
+			"entries": [
+				"The first creature you hit with this weapon on a turn must succeed a DC 15 Strength saving throw or become {@condition restrained} by ice rooting them to the ground. This ice lasts until the end of their turn."
+			],
+			"page": 0
+		},
+		{
+			"name": "Arc Scimitar",
+			"source": "WorldofKoltorran",
+			"type": "M",
+			"rarity": "rare",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				"When you roll a critical strike with this magic weapon, lightning arcs to all creatures of your choice within 30 feet of the target. Each creature in that area must make a DC 15 Dexterity saving throw, taking {@dice 2d6} lightning damage on a failed save, of half as much on a successful one."
+			],
+			"reqAttune": true,
+			"page": 0
+		},
+		{
+			"name": "Mace of Melting",
+			"source": "WorldofKoltorran",
+			"type": "M",
+			"rarity": "rare",
+			"weight": 4,
+			"weaponCategory": "simple",
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"mace": true,
+			"weapon": true,
+			"entries": [
+				"When you roll a critical strike with this magic weapon, the target begins corroding with acid. Until a creature takes an action to remove the acid, the target takes {@dice 1d4} acid damage at the start of each of its turns. The acid damage doubles on each successive turn."
+			],
+			"page": 0
+		},
+		{
+			"name": "Vicious Greataxe",
+			"source": "WorldofKoltorran",
+			"type": "M",
+			"rarity": "rare",
+			"weight": 7,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"axe": true,
+			"weapon": true,
+			"entries": [
+				"When you roll a critical strike with this magic weapon and the target resists some of the damage dealt, the target takes the full damage of the attack again as psychic damage."
+			],
+			"page": 0
+		},
+		{
+			"name": "Life's Balance",
+			"source": "WorldofKoltorran",
+			"page": 0,
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 4,
+			"weaponCategory": "simple",
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"entries": [
+				"When you heal yourself or another creature with a spell, the mace begins to glow, storing half the amount of healing done to one of those creatures of your choice. The next time you hit with a melee attack, the target takes additional radiant damage equal to the stored amount. Using another healing spell replaces the stored hit points."
+			]
+		},
+		{
+			"name": "Ring of Moderate Power",
+			"source": "WorldofKoltorran",
+			"page": 0,
+			"type": "RG",
+			"rarity": "rare",
+			"reqAttune": true,
+			"entries": [
+				"Whenever you cast a spell of 1st-level, you instead cast it as a 2nd-level spell, expending a 1st-level spell slot instead of a 2nd-level spell slot."
+			]
+		},
+		{
+			"name": "Mindshare Headpiece",
+			"source": "WorldofKoltorran",
+			"page": 0,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"When you attune to this item, choose up to three allies you can see. Whenever you cast a spell that requires concentration, you can choose one of these creatures within 30 feet of you to concentrate on it instead, as if they had cast the spell. The creature loses concentration if they ever move further than 60 feet away from you."
+			]
+		},
+		{
+			"name": "Sheath of Swapping",
+			"source": "WorldofKoltorran",
+			"page": 0,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"When you attune to this item, you can insert up to two melee weapons into the hilt, which acts as a sheath to both of them. As a bonus action, you may activate any one of the weapons, which appears by springing out of the hilt. Doing this while the other weapon is active replaces the other weapon in your hand. You instantly attune to the weapon that springs forth without expending an attunement slot. The weapon stays active until you use a bonus action to deactivate the weapon or until you drop the sheathe.",
+				"If you activate a cursed weapon, you lose attunement to the sheath, instead becoming attuned to the cursed item. If there is another weapon in the blade, it is removed from the sheath and drops to the floor along with it.",
+				"Placing a Sheath of Swapping inside an extradimensional space created by a {@item bag of holding}, {@item portable hole}, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened."
+			]
+		},
+		{
+			"name": "Starforge Greatsword",
+			"source": "WorldofKoltorran",
+			"page": 0,
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "4d6",
+			"dmgType": "S",
+			"bonusWeapon": "+2",
+			"entries": [
+				"You gain two additional hit dice. These hit dice are d10s.",
+				{
+					"type": "entries",
+					"name": "Curse",
+					"entries": [
+						"This item is cursed. Attuning to it curses you until you are targeted by a {@spell remove curse} spell or similar magic. As long as you remain cursed, you cannot discard the greatsword, which immediately teleports back into your pack. While you are attuned to the greatsword, you cannot deal damage unless it is slashing."
+					]
+				}
+			]
+		},
+		{
+			"name": "Poised Prism Quiver",
+			"source": "WorldofKoltorran",
+			"page": 0,
+			"rarity": "uncommon",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"Your ranged attacks deal additional damage equal to your highest ability score modifier. The type of damage dealt depends on your lowest ability score, as listed below:",
+				{
+					"type": "table",
+					"colLabels": [
+						"Ability Score",
+						"Damage Type"
+					],
+					"colStyles": [
+						"col-1",
+						"col-5"
+					],
+					"rows": [
+						[
+							"Strength",
+							"Fire"
+						],
+						[
+							"Dexterity",
+							"Thunder"
+						],
+						[
+							"Constitution",
+							"Force"
+						],
+						[
+							"Intelligence",
+							"Lightning"
+						],
+						[
+							"Wisdom",
+							"Poison"
+						],
+						[
+							"Charisma",
+							"Ice"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Magic Mirror",
+			"source": "WorldofKoltorran",
+			"page": 0,
+			"tier": "minor",
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This pocket-sized mirror stores the location it was created. A creature that looks in the mirror for 10 minutes teleports there, even if the location is in a different plane of existence."
+			],
+			"value": 50000
+		},
+		{
+			"name": "Imprint Stone",
+			"source": "WorldofKoltorran",
+			"page": 0,
+			"tier": "minor",
+			"rarity": "common",
+			"wondrous": true,
+			"entries": [
+				"This small stone sparkles across the whole color spectrum. When the stone touches a teleportation circle with one or more fixed destinations, it magically stores one of those destinations. The next time a creature uses a teleportation circle or similar teleportation spell, they can crush the stone to travel to its stored destination, even if it is on another plane of existence."
+			],
+			"value": 15000
+		},
+		{
+			"name": "Craving Gilded Shortsword",
+			"source": "WorldofKoltorran",
+			"type": "M",
+			"rarity": "common",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				"When you deal damage to a creature with this weapon, a number of copper pieces erupt from the weapon equal to the amount of damage dealt."
+			],
+			"page": 0
+		},
+		{
+			"name": "Hoarding Gilded Shortsword",
+			"source": "WorldofKoltorran",
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				"When you deal damage to a creature with this weapon, a number of silver pieces erupt from the weapon equal to the amount of damage dealt."
+			],
+			"page": 0
+		},
+		{
+			"name": "Plundering Gilded Shortsword",
+			"source": "WorldofKoltorran",
+			"type": "M",
+			"rarity": "rare",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				"When you deal damage to a creature with this weapon, a number of gold pieces erupt from the weapon equal to the amount of damage dealt."
+			],
+			"page": 0
+		}
+	],
+	"magicvariant": [
+		{
+			"name": "Sniper's Bow",
+			"requires": [
+				{
+					"name": "Longbow"
+				},
+				{
+					"name": "Shortbow"
+				}
+			],
+			"inherits": {
+				"namePrefix": "Sniper's ",
+				"source": "WorldofKoltorran",
+				"page": 0,
+				"rarity": "rare",
+				"entries": [
+					"When you hit a target at a distance further than your weapon's normal range, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the attack."
+				]
+			}
 		}
 	]
 }
